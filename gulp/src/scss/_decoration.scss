@@ -1,0 +1,36 @@
+// ================
+// == decoration ==
+// ================
+
+
+@mixin button($bfs) {
+	font-size: em(16px, $bfs);
+	font-family: $font--open-sans;
+	background: white;
+	box-shadow: none;
+	border: 1px solid #777;
+	border-radius: 3px;
+	display: inline-block;
+	line-height: 1.5;
+	padding: em(4px, $bfs) em(8px, $bfs);
+	margin: 0;
+	-webkit-user-select: none;
+	cursor: pointer;
+	text-transform: capitalize;
+}
+
+%glow-text {
+	-webkit-animation: glow-the-text 2.5s infinite;
+	animation: glow-the-text 2.5s infinite;
+}
+// animation keyframes for glowing the text
+@-webkit-keyframes glow-the-text {
+    0% { color: $color--hot-pink; }
+    50% { color: $color--blue; }
+    100% { color: $color--hot-pink; }
+}
+@keyframes glow-the-text {
+    0% { color: $color--hot-pink; }
+    50% { color: $color--blue; }
+    100% { color: $color--hot-pink; }
+}

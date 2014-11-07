@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<script>
+		// need to instantiate a Node Webkit gui object for use in our main javascript file
+		var nw = require('nw.gui');
+	</script>
+</head>
+<body>
+	<div class="page-wrapper">
+		<main data-js="container" class="container">
+			<h1>Welcome to <span class="headline--attention">Node-Webkit</span></h1>
+			<p>
+				Node-Webkit makes it is easy to develop rich desktop applictions using the front-end web stack you already know (HTML, JavaScript and CSS)!
+			</p>
+			<button data-js="open-devtools" class="button--devtools">dev tools</button>
+			<button data-js="reload-page" class="button--reload">reload page</button>
+		</main>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

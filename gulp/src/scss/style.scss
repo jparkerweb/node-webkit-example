@@ -1,0 +1,86 @@
+// =====================
+// == app style sheet ==
+// =====================
+
+
+// -------------
+// -- imports --
+// -------------
+@import "font--open-sans";
+@import "colors";
+@import "utils";
+@import "decoration";
+
+
+
+// ----------------
+// -- Base Style --
+// ----------------
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+html { 
+	padding: 0;
+	font-size: 16px;
+}
+body {
+	background: $color--blue;
+	font-family: $font--open-sans;
+	font-weight: 400;
+	font-size: em(16px);
+}
+h1 {
+	font-size: em(22px);
+	font-weight: 400;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+}
+
+
+// -------------------
+// -- markup styles --
+// -------------------
+.page-wrapper {
+	// allow for child to be vertically centered
+	@extend %vertical-align--parent;
+
+	$bfs: 16px;
+	padding: em(20px, $bfs);	
+	padding: 0 em(20px, $bfs);
+	height: 100%;
+}
+
+.container {
+	// vertically center child
+	@extend %vertical-align--child;
+	$bfs: 16px;
+	font-size: em(18px, $bfs);
+	$bfs: 18px;
+	max-width: em(500px, $bfs);
+	margin: 0 auto;
+	background: $color--light-gray;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: em(20px, $bfs);
+	overflow: auto;
+	
+	.headline--attention {
+		@extend %glow-text;
+		text-transform: uppercase;
+		font-weight: 600;
+		white-space: nowrap;
+	}
+
+	.button--reload,
+	.button--devtools {
+		@include button($bfs);
+		float: right;
+		margin-left: em(5px, $bfs);
+	}
+}

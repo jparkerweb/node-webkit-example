@@ -1,0 +1,26 @@
+{
+  "name": "node-webkit-firstapp",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Test app to test out Node-Webkit",
+  "author": "Justin Parker",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "^1.0.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-csso": "^0.2.9",
+    "gulp-header": "^1.2.2",
+    "gulp-if": "^1.2.5",
+    "gulp-notify": "^2.0.1",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-shell": "^0.2.10",
+    "gulp-uglify": "^1.0.1",
+    "gulp-webpack": "^1.0.0",
+    "run-sequence": "^1.0.1"
+  },
+  "scripts": {
+    "update": "gem update sass && npm install && npm prune",
+    "outdated": "npm outdated --depth=0"
+  }
+}

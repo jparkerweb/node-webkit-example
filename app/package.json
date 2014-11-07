@@ -1,0 +1,10 @@
+{
+	"main": "index.html",
+	"name": "node-webkit-example",
+	"window": {
+		"title": "Example App",
+		"icon": "icons/app_icon.png",
+		"toolbar": false,
+		"show": true
+	}
+}
