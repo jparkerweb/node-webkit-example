@@ -2,13 +2,6 @@ node-webkit-example
 ===================
 This is an example node-webkit app.  It is very bare bones and could be used as a simple boilerplate to get up and running quickly.  A Gulp workflow is provided for CSS/JavaScript development.
 
-<!-- formating of html elements -->
-<style>
-  table { border: 1px solid #ddd; }
-  td { vertical-align: top; padding: 5px; border: 1px solid #ddd; }
-  td code { margin: 5px; padding: 1px 3px; line-height: 1.5; }
-</style>
-
 <br>
 ####Requirements
 To run this example you will need node-webkit in the root of this project folder.  The easiest was to do this is to download the version that corresponds to your operating system here:<br>
@@ -31,15 +24,15 @@ The following Gulp tasks have been defined and can be run from the gulp location
 
 <table>
   <tr>
-    <td>`gulp`</td>
+    <td>gulp</td>
     <td>default task that compiles your css and javascript, watches for any css/javascript changes, and runs the example app</td>
   </tr>
   <tr>
-    <td>`gulp build`</td>
+    <td>gulp build</td>
     <td>compile and minifiy css and javascript files</td>
   </tr>
   <tr>
-    <td>`gulp app`</td>
+    <td>gulp app</td>
     <td>open the example app by running "nw.exe app" from gulp-shell</td>
   </tr>
 </table>
