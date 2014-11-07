@@ -64,3 +64,8 @@ Shane Gavin over at nodehead.com has put together a great mini-series on getting
 4. http://nodehead.com/node-webkit-context-and-window-menus/
 5. http://nodehead.com/node-webkit-using-node-js-modules/
 6. http://nodehead.com/node-webkit-wrapping-it-up/
+
+
+<br>
+Set of sample apps from Cheng Zhao:
+https://github.com/zcbenz/nw-sample-apps
