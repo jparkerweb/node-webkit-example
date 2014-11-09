@@ -41,17 +41,24 @@ The following Gulp tasks have been defined and can be run from the gulp location
 ####Folder Structure
 ````
 Root
-> ... extracted node-webkit files (nw.exe, etc.)
-> [gulp]
-	> [src]
-		> [js]
-			> script.js (main script file for app)
-			> ... (modules like jquery that are included in scripts.js)
-		> [scss]
-	> gulpfile.js
-	> package.json
->  [app]
-	> ... app files and folders (index.html, style.css, etc.)
+ │
+ ├── ... extracted node-webkit files (nw.exe, etc.)
+ ├── [gulp]
+ │    │
+ │    ├── gulpfile.js
+ │    ├── package.json
+ │    └── [src]
+ │         │
+ │         ├── [js]
+ │         │    │
+ │         │    ├── script.js (main script file for app)
+ │         │    └── ... (modules like jquery that are included in scripts.js)
+ │         │
+ │         └──  [scss]
+ │  
+ └── [app]
+      │
+      └── ... app files and folders (index.html, style.css, etc.)
 ````
 
 <br>
