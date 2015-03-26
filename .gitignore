@@ -1,6 +1,6 @@
-./locales/**/*
-./*.html
-./*.dat
-./*.dll
-./nw.*
-./nwjc.exe
+locales/**/*
+*.html
+*.dat
+*.dll
+nw.*
+nwjc.exe
