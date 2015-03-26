@@ -1,6 +1,0 @@
-locales/**/*
-*.html
-*.dat
-*.dll
-nw.*
-nwjc.exe
