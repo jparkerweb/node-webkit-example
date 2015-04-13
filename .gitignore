@@ -3,3 +3,9 @@ locales/**/*
 *.dll
 *.dat
 nw*.*
+
+#################
+## NPM
+#################
+gulp/node_modules/**/*
+gulp/.sass-cache/**/*
